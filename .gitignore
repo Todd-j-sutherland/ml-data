@@ -1,0 +1,10 @@
+# Ignore very large model files (>100MB)
+*.bin
+*.large
+**/cache/large_*
+
+# Keep everything else
+!*.pkl
+!*.json
+!*.db
+!*.log
