@@ -1,0 +1,79 @@
+{
+  "symbol": "NAB.AX",
+  "analysis_period_days": 14,
+  "data_points": 93,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": -0.19678822704561433,
+      "pearson_p_value": 0.05867482099515201,
+      "spearman": -0.12288080210530036,
+      "spearman_p_value": 0.24061711852935536,
+      "significance": "not_significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": 0.1587844883644611,
+      "interpretation": "very_weak_positive"
+    },
+    "sentiment_vs_volume": {
+      "pearson": 0.021886831159956606,
+      "interpretation": "very_weak_positive"
+    },
+    "lagged_correlations": {
+      "1_day": -0.18828397066332053,
+      "2_day": -0.14571717521102076,
+      "3_day": -5.1910255854048515e-05
+    },
+    "data_quality": {
+      "total_points": 93,
+      "valid_points": 93,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.3333333333333333,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 9,
+        "down": 53,
+        "flat": 31
+      }
+    },
+    "total_predictions": 93,
+    "correct_predictions": 31,
+    "sentiment_distribution": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 93
+    },
+    "price_distribution": {
+      "up": 9,
+      "down": 53,
+      "flat": 31
+    }
+  },
+  "summary": "Sentiment-price correlation: -0.197 (not_significant). Weak correlation suggests other factors dominate price movements. ",
+  "recommendations": [
+    "No significant sentiment-price correlation. Focus on technical/fundamental analysis."
+  ],
+  "analysis_timestamp": "2025-07-31T21:54:54.980143",
+  "analysis_version": "1.0"
+}
