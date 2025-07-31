@@ -1,0 +1,80 @@
+{
+  "symbol": "WBC.AX",
+  "analysis_period_days": 14,
+  "data_points": 96,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": 0.21843193051054655,
+      "pearson_p_value": 0.0325133794676429,
+      "spearman": 0.6263026775978267,
+      "spearman_p_value": 8.822438607263394e-12,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": -0.41560337157831356,
+      "interpretation": "moderate_negative"
+    },
+    "sentiment_vs_volume": {
+      "pearson": -0.4389016292339881,
+      "interpretation": "moderate_negative"
+    },
+    "lagged_correlations": {
+      "1_day": 0.33218912721325244,
+      "2_day": 0.6146573028038276,
+      "3_day": 0.6067730323615148
+    },
+    "data_quality": {
+      "total_points": 96,
+      "valid_points": 96,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.1875,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 23,
+        "down": 55,
+        "flat": 18
+      }
+    },
+    "total_predictions": 96,
+    "correct_predictions": 18,
+    "sentiment_distribution": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 96
+    },
+    "price_distribution": {
+      "up": 23,
+      "down": 55,
+      "flat": 18
+    }
+  },
+  "summary": "Sentiment-price correlation: 0.218 (significant). Weak correlation suggests other factors dominate price movements. ",
+  "recommendations": [
+    "Strong 2_day lagged correlation (0.615). Sentiment may predict future price movements.",
+    "Strong 3_day lagged correlation (0.607). Sentiment may predict future price movements."
+  ],
+  "analysis_timestamp": "2025-07-31T07:51:53.917084",
+  "analysis_version": "1.0"
+}
