@@ -1,0 +1,79 @@
+{
+  "symbol": "ANZ.AX",
+  "analysis_period_days": 14,
+  "data_points": 106,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": 0.03736508089285104,
+      "pearson_p_value": 0.7037460642191081,
+      "spearman": 0.04559531341787258,
+      "spearman_p_value": 0.642570405370637,
+      "significance": "not_significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": 0.20738188228974924,
+      "interpretation": "weak_positive"
+    },
+    "sentiment_vs_volume": {
+      "pearson": -0.16343709882438398,
+      "interpretation": "very_weak_negative"
+    },
+    "lagged_correlations": {
+      "1_day": 0.10377131814545865,
+      "2_day": 0.08933463157727742,
+      "3_day": 0.07937737052103096
+    },
+    "data_quality": {
+      "total_points": 106,
+      "valid_points": 106,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.7264150943396226,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 23,
+        "down": 6,
+        "flat": 77
+      }
+    },
+    "total_predictions": 106,
+    "correct_predictions": 77,
+    "sentiment_distribution": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 106
+    },
+    "price_distribution": {
+      "up": 23,
+      "down": 6,
+      "flat": 77
+    }
+  },
+  "summary": "Sentiment-price correlation: 0.037 (not_significant). Weak correlation suggests other factors dominate price movements. ",
+  "recommendations": [
+    "No significant sentiment-price correlation. Focus on technical/fundamental analysis."
+  ],
+  "analysis_timestamp": "2025-08-02T02:24:39.708923",
+  "analysis_version": "1.0"
+}
