@@ -1,0 +1,81 @@
+{
+  "symbol": "CBA.AX",
+  "analysis_period_days": 14,
+  "data_points": 132,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": 0.4668008124764583,
+      "pearson_p_value": 1.6820333826450303e-08,
+      "spearman": 0.4352450116154024,
+      "spearman_p_value": 1.8339899127758014e-07,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": -0.6009644396754646,
+      "interpretation": "strong_negative"
+    },
+    "sentiment_vs_volume": {
+      "pearson": -0.5306076197376175,
+      "interpretation": "moderate_negative"
+    },
+    "lagged_correlations": {
+      "1_day": 0.46569607108983674,
+      "2_day": 0.45727554529555364,
+      "3_day": 0.45023263650957346
+    },
+    "data_quality": {
+      "total_points": 132,
+      "valid_points": 132,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.3712121212121212,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 1
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 11,
+        "down": 71,
+        "flat": 49
+      }
+    },
+    "total_predictions": 132,
+    "correct_predictions": 49,
+    "sentiment_distribution": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 131
+    },
+    "price_distribution": {
+      "up": 11,
+      "down": 71,
+      "flat": 50
+    }
+  },
+  "summary": "Sentiment-price correlation: 0.467 (significant). Strong correlation suggests news sentiment is a good predictor. ",
+  "recommendations": [
+    "Strong 1_day lagged correlation (0.466). Sentiment may predict future price movements.",
+    "Strong 2_day lagged correlation (0.457). Sentiment may predict future price movements.",
+    "Strong 3_day lagged correlation (0.450). Sentiment may predict future price movements."
+  ],
+  "analysis_timestamp": "2025-08-05T08:43:11.243431",
+  "analysis_version": "1.0"
+}
