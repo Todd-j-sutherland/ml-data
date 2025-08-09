@@ -1,0 +1,83 @@
+{
+  "symbol": "NAB.AX",
+  "analysis_period_days": 14,
+  "data_points": 22,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": 0.9119769826710873,
+      "pearson_p_value": 3.4905107674195465e-09,
+      "spearman": 0.8653226610863252,
+      "spearman_p_value": 2.0086147366285763e-07,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": -0.9118688092548862,
+      "interpretation": "very_strong_negative"
+    },
+    "sentiment_vs_volume": {
+      "pearson": -0.3520734813574686,
+      "interpretation": "weak_negative"
+    },
+    "lagged_correlations": {
+      "1_day": 0.8356587471518139,
+      "2_day": 0.7566998762880776,
+      "3_day": 0.6584349217359612
+    },
+    "data_quality": {
+      "total_points": 22,
+      "valid_points": 22,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.45454545454545453,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 12
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 10
+      }
+    },
+    "total_predictions": 22,
+    "correct_predictions": 10,
+    "sentiment_distribution": {
+      "positive": 12,
+      "negative": 0,
+      "neutral": 10
+    },
+    "price_distribution": {
+      "up": 0,
+      "down": 0,
+      "flat": 22
+    }
+  },
+  "summary": "Sentiment-price correlation: 0.912 (significant). Strong correlation suggests news sentiment is a good predictor. ",
+  "recommendations": [
+    "Strong sentiment-price correlation detected. Consider sentiment-based trading strategies.",
+    "Positive correlation: Consider buying on positive sentiment spikes.",
+    "Strong 1_day lagged correlation (0.836). Sentiment may predict future price movements.",
+    "Strong 2_day lagged correlation (0.757). Sentiment may predict future price movements.",
+    "Strong 3_day lagged correlation (0.658). Sentiment may predict future price movements."
+  ],
+  "analysis_timestamp": "2025-08-09T10:05:09.295262",
+  "analysis_version": "1.0"
+}
