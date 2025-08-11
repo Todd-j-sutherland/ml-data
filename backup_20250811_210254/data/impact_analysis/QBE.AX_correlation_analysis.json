@@ -1,0 +1,81 @@
+{
+  "symbol": "QBE.AX",
+  "analysis_period_days": 14,
+  "data_points": 22,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": -0.5539198968816612,
+      "pearson_p_value": 0.007478840425920934,
+      "spearman": -0.4057001438448118,
+      "spearman_p_value": 0.061025467875062446,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": 0.49734362856353737,
+      "interpretation": "moderate_positive"
+    },
+    "sentiment_vs_volume": {
+      "pearson": 0.5385703603904641,
+      "interpretation": "moderate_positive"
+    },
+    "lagged_correlations": {
+      "1_day": -0.5142381830899305,
+      "2_day": -0.33343889764404916,
+      "3_day": -0.23656227473193492
+    },
+    "data_quality": {
+      "total_points": 22,
+      "valid_points": 22,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.3181818181818182,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 10,
+        "down": 5,
+        "flat": 7
+      }
+    },
+    "total_predictions": 22,
+    "correct_predictions": 7,
+    "sentiment_distribution": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 22
+    },
+    "price_distribution": {
+      "up": 10,
+      "down": 5,
+      "flat": 7
+    }
+  },
+  "summary": "Sentiment-price correlation: -0.554 (significant). Strong correlation suggests news sentiment is a good predictor. ",
+  "recommendations": [
+    "Strong sentiment-price correlation detected. Consider sentiment-based trading strategies.",
+    "Negative correlation: Consider contrarian strategy - sell on positive sentiment.",
+    "Strong 1_day lagged correlation (-0.514). Sentiment may predict future price movements."
+  ],
+  "analysis_timestamp": "2025-08-11T10:40:08.230924",
+  "analysis_version": "1.0"
+}
