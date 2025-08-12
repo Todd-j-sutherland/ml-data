@@ -1,0 +1,77 @@
+{
+  "symbol": "QBE.AX",
+  "analysis_period_days": 14,
+  "data_points": 24,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": -0.4581257987903517,
+      "pearson_p_value": 0.024365588883006554,
+      "spearman": -0.5189657047184965,
+      "spearman_p_value": 0.009362502809550144,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": 0.3243981138618554,
+      "interpretation": "weak_positive"
+    },
+    "sentiment_vs_volume": {
+      "pearson": 0.61675600341928,
+      "interpretation": "strong_positive"
+    },
+    "lagged_correlations": {
+      "1_day": -0.36259704918213087,
+      "2_day": -0.2578561563440953,
+      "3_day": -0.21474772768449563
+    },
+    "data_quality": {
+      "total_points": 24,
+      "valid_points": 24,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.2916666666666667,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 10,
+        "down": 7,
+        "flat": 7
+      }
+    },
+    "total_predictions": 24,
+    "correct_predictions": 7,
+    "sentiment_distribution": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 24
+    },
+    "price_distribution": {
+      "up": 10,
+      "down": 7,
+      "flat": 7
+    }
+  },
+  "summary": "Sentiment-price correlation: -0.458 (significant). Strong correlation suggests news sentiment is a good predictor. ",
+  "recommendations": [],
+  "analysis_timestamp": "2025-08-11T12:44:19.842271",
+  "analysis_version": "1.0"
+}
