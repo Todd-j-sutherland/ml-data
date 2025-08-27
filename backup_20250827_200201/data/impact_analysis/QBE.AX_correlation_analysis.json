@@ -1,0 +1,77 @@
+{
+  "symbol": "QBE.AX",
+  "analysis_period_days": 14,
+  "data_points": 120,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": -0.2667534082061658,
+      "pearson_p_value": 0.0032283839124525216,
+      "spearman": -0.21488672635506118,
+      "spearman_p_value": 0.018426667225968408,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": 0.4507278075861685,
+      "interpretation": "moderate_positive"
+    },
+    "sentiment_vs_volume": {
+      "pearson": 0.4449162833777606,
+      "interpretation": "moderate_positive"
+    },
+    "lagged_correlations": {
+      "1_day": -0.23505447152541842,
+      "2_day": -0.21859498194343568,
+      "3_day": -0.17973751697702245
+    },
+    "data_quality": {
+      "total_points": 120,
+      "valid_points": 120,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.725,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 1
+      },
+      "neutral_sentiment": {
+        "up": 8,
+        "down": 24,
+        "flat": 87
+      }
+    },
+    "total_predictions": 120,
+    "correct_predictions": 87,
+    "sentiment_distribution": {
+      "positive": 0,
+      "negative": 1,
+      "neutral": 119
+    },
+    "price_distribution": {
+      "up": 8,
+      "down": 24,
+      "flat": 88
+    }
+  },
+  "summary": "Sentiment-price correlation: -0.267 (significant). Weak correlation suggests other factors dominate price movements. ",
+  "recommendations": [],
+  "analysis_timestamp": "2025-08-27T08:14:36.190362",
+  "analysis_version": "1.0"
+}
