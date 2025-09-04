@@ -1,0 +1,77 @@
+{
+  "symbol": "CBA.AX",
+  "analysis_period_days": 14,
+  "data_points": 206,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": -0.2868770551006362,
+      "pearson_p_value": 2.9071901112485773e-05,
+      "spearman": -0.2731816805278533,
+      "spearman_p_value": 7.101169383762553e-05,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": 0.30612462151850656,
+      "interpretation": "weak_positive"
+    },
+    "sentiment_vs_volume": {
+      "pearson": -0.49142592919452005,
+      "interpretation": "moderate_negative"
+    },
+    "lagged_correlations": {
+      "1_day": -0.2735191731185497,
+      "2_day": -0.2580032221383428,
+      "3_day": -0.24984817549671637
+    },
+    "data_quality": {
+      "total_points": 206,
+      "valid_points": 206,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.48058252427184467,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 12,
+        "flat": 27
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 39,
+        "down": 29,
+        "flat": 99
+      }
+    },
+    "total_predictions": 206,
+    "correct_predictions": 99,
+    "sentiment_distribution": {
+      "positive": 39,
+      "negative": 0,
+      "neutral": 167
+    },
+    "price_distribution": {
+      "up": 39,
+      "down": 41,
+      "flat": 126
+    }
+  },
+  "summary": "Sentiment-price correlation: -0.287 (significant). Weak correlation suggests other factors dominate price movements. ",
+  "recommendations": [],
+  "analysis_timestamp": "2025-09-04T01:53:12.084806",
+  "analysis_version": "1.0"
+}
