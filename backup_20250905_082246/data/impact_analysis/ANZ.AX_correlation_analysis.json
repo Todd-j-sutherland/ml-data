@@ -1,0 +1,77 @@
+{
+  "symbol": "ANZ.AX",
+  "analysis_period_days": 14,
+  "data_points": 228,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": -0.28746891342338204,
+      "pearson_p_value": 1.0323926372235333e-05,
+      "spearman": -0.3622101586640486,
+      "spearman_p_value": 1.7855991123382047e-08,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": -0.1413123639810696,
+      "interpretation": "very_weak_negative"
+    },
+    "sentiment_vs_volume": {
+      "pearson": -0.3155662090346122,
+      "interpretation": "weak_negative"
+    },
+    "lagged_correlations": {
+      "1_day": -0.26611144026888367,
+      "2_day": -0.2607786494941218,
+      "3_day": -0.26036995117325573
+    },
+    "data_quality": {
+      "total_points": 228,
+      "valid_points": 228,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.5657894736842105,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 72,
+        "down": 27,
+        "flat": 129
+      }
+    },
+    "total_predictions": 228,
+    "correct_predictions": 129,
+    "sentiment_distribution": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 228
+    },
+    "price_distribution": {
+      "up": 72,
+      "down": 27,
+      "flat": 129
+    }
+  },
+  "summary": "Sentiment-price correlation: -0.287 (significant). Weak correlation suggests other factors dominate price movements. ",
+  "recommendations": [],
+  "analysis_timestamp": "2025-09-04T22:16:13.238128",
+  "analysis_version": "1.0"
+}
