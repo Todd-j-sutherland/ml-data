@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-08-12T08:45:14.427285",
+  "mode": "dry_run",
+  "original_analysis": {
+    "timestamp": "2025-08-12T08:45:14.426565",
+    "summary": {
+      "total_records_analyzed": 193,
+      "total_anomalies_detected": 4,
+      "critical_issues": 0,
+      "data_quality_score": 80
+    },
+    "anomalies": {
+      "price": [
+        {
+          "type": "price_outliers",
+          "severity": "medium",
+          "records": 20,
+          "description": "20 records have unusual price patterns",
+          "affected_records": [
+            240,
+            253,
+            252,
+            251,
+            250,
+            249,
+            248,
+            247,
+            195,
+            130,
+            126,
+            123,
+            119,
+            116,
+            95,
+            91,
+            88,
+            3,
+            7,
+            10
+          ]
+        }
+      ],
+      "missing": [],
+      "bias": [
+        {
+          "type": "action_bias_high",
+          "severity": "high",
+          "records": 155,
+          "description": "HOLD predictions are 80.3% of all trades (possible overfit)",
+          "action": "HOLD"
+        },
+        {
+          "type": "action_bias_low",
+          "severity": "medium",
+          "records": 6,
+          "description": "BUY predictions are only 3.6% of all trades (possible underfit)",
+          "action": "BUY"
+        },
+        {
+          "type": "confidence_low_variance",
+          "severity": "medium",
+          "description": "Confidence scores have very low variance (std: 0.080)",
+          "stats": {
+            "count": 186.0,
+            "mean": 0.6873921835818939,
+            "std": 0.08037448008303939,
+            "min": 0.5704,
+            "25%": 0.5973875000000001,
+            "50%": 0.73157,
+            "75%": 0.7371000000000001,
+            "max": 0.96
+          }
+        }
+      ],
+      "market": []
+    },
+    "recommendations": [
+      {
+        "priority": "medium",
+        "action": "retrain_model",
+        "description": "Model showing HOLD bias - consider rebalancing training data",
+        "automated_fix": "Retrain with balanced sampling",
+        "code": "python3 ../enhanced_training_pipeline.py --rebalance"
+      }
+    ],
+    "next_actions": [
+      "Review critical issues immediately",
+      "Implement recommended automated fixes",
+      "Schedule regular quality monitoring",
+      "Consider ML-based anomaly detection for continuous monitoring"
+    ]
+  },
+  "fixes_applied": {},
+  "total_fixes": 0,
+  "status": "completed"
+}

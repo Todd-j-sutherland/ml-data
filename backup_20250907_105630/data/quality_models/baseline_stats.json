@@ -1,0 +1,12 @@
+{
+  "entry_price_mean": 77.32601062082874,
+  "entry_price_std": 75.9947091078985,
+  "return_pct_mean": 0.47389516519276675,
+  "return_pct_std": 1.552445698062193,
+  "confidence_mean": 0.687392183581894,
+  "confidence_std": 0.08037448008303938,
+  "round_price_rate": 0.0,
+  "extreme_return_rate": 0.0,
+  "training_date": "2025-08-12T08:45:13.786138",
+  "training_samples": 193
+}
