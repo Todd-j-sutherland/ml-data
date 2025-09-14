@@ -1,0 +1,80 @@
+{
+  "symbol": "NAB.AX",
+  "analysis_period_days": 14,
+  "data_points": 164,
+  "correlations": {
+    "sentiment_vs_price": {
+      "pearson": -0.4866431279350178,
+      "pearson_p_value": 3.925195652909331e-11,
+      "spearman": -0.46359820365089294,
+      "spearman_p_value": 4.0649780493998896e-10,
+      "significance": "significant"
+    },
+    "sentiment_vs_volatility": {
+      "pearson": 0.2453369828317087,
+      "interpretation": "weak_positive"
+    },
+    "sentiment_vs_volume": {
+      "pearson": 0.1402047196940587,
+      "interpretation": "very_weak_positive"
+    },
+    "lagged_correlations": {
+      "1_day": -0.47209375724913116,
+      "2_day": -0.43130472616611687,
+      "3_day": -0.39464562989918534
+    },
+    "data_quality": {
+      "total_points": 164,
+      "valid_points": 164,
+      "data_completeness": 1.0
+    }
+  },
+  "event_impact": {
+    "event_type_impacts": {},
+    "summary": {
+      "highest_impact_positive": null,
+      "highest_impact_negative": null,
+      "most_frequent_event": null,
+      "average_impact": 0
+    }
+  },
+  "predictive_metrics": {
+    "prediction_accuracy": 0.5975609756097561,
+    "confusion_matrix": {
+      "positive_sentiment": {
+        "up": 0,
+        "down": 6,
+        "flat": 6
+      },
+      "negative_sentiment": {
+        "up": 0,
+        "down": 0,
+        "flat": 0
+      },
+      "neutral_sentiment": {
+        "up": 53,
+        "down": 1,
+        "flat": 98
+      }
+    },
+    "total_predictions": 164,
+    "correct_predictions": 98,
+    "sentiment_distribution": {
+      "positive": 12,
+      "negative": 0,
+      "neutral": 152
+    },
+    "price_distribution": {
+      "up": 53,
+      "down": 7,
+      "flat": 104
+    }
+  },
+  "summary": "Sentiment-price correlation: -0.487 (significant). Strong correlation suggests news sentiment is a good predictor. ",
+  "recommendations": [
+    "Strong 1_day lagged correlation (-0.472). Sentiment may predict future price movements.",
+    "Strong 2_day lagged correlation (-0.431). Sentiment may predict future price movements."
+  ],
+  "analysis_timestamp": "2025-09-11T07:04:45.691323",
+  "analysis_version": "1.0"
+}

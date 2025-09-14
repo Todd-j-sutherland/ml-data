@@ -12262,5 +12262,137 @@
     "symbol": "MQG.AX",
     "sentiment_score": 0.05285491682273599,
     "confidence": 0.7370200000000001
+  },
+  {
+    "timestamp": "2025-09-08T09:00:47.079860",
+    "symbol": "CBA.AX",
+    "sentiment_score": 0.2298539183930824,
+    "confidence": 0.7321000000000001
+  },
+  {
+    "timestamp": "2025-09-09T07:01:32.117028",
+    "symbol": "CBA.AX",
+    "sentiment_score": 0.18234226794305272,
+    "confidence": 0.7381400000000001
+  },
+  {
+    "timestamp": "2025-09-09T07:02:37.409668",
+    "symbol": "WBC.AX",
+    "sentiment_score": 0.11959321391125462,
+    "confidence": 0.7348100000000001
+  },
+  {
+    "timestamp": "2025-09-09T07:03:38.412143",
+    "symbol": "ANZ.AX",
+    "sentiment_score": -0.05634708538084493,
+    "confidence": 0.7378000000000001
+  },
+  {
+    "timestamp": "2025-09-09T07:04:40.817159",
+    "symbol": "NAB.AX",
+    "sentiment_score": 0.019508459004189904,
+    "confidence": 0.7328500000000001
+  },
+  {
+    "timestamp": "2025-09-09T07:05:38.695640",
+    "symbol": "MQG.AX",
+    "sentiment_score": 0.020413685627988967,
+    "confidence": 0.7308100000000001
+  },
+  {
+    "timestamp": "2025-09-09T07:06:45.224424",
+    "symbol": "SUN.AX",
+    "sentiment_score": 0.047557791312606575,
+    "confidence": 0.6849000000000001
+  },
+  {
+    "timestamp": "2025-09-09T07:07:44.430304",
+    "symbol": "QBE.AX",
+    "sentiment_score": 0.0016837949155846955,
+    "confidence": 0.5828000000000001
+  },
+  {
+    "timestamp": "2025-09-10T07:01:31.973890",
+    "symbol": "CBA.AX",
+    "sentiment_score": 0.20155776735763792,
+    "confidence": 0.7300200000000001
+  },
+  {
+    "timestamp": "2025-09-10T07:02:34.411770",
+    "symbol": "WBC.AX",
+    "sentiment_score": 0.14678526400319156,
+    "confidence": 0.73218
+  },
+  {
+    "timestamp": "2025-09-10T07:03:38.371182",
+    "symbol": "ANZ.AX",
+    "sentiment_score": -0.035597929886847415,
+    "confidence": 0.73989
+  },
+  {
+    "timestamp": "2025-09-10T07:04:43.848960",
+    "symbol": "NAB.AX",
+    "sentiment_score": 0.11286811852361847,
+    "confidence": 0.7368100000000001
+  },
+  {
+    "timestamp": "2025-09-10T07:05:42.293538",
+    "symbol": "MQG.AX",
+    "sentiment_score": 0.05244478667928467,
+    "confidence": 0.7333300000000001
+  },
+  {
+    "timestamp": "2025-09-10T07:06:45.232662",
+    "symbol": "SUN.AX",
+    "sentiment_score": 0.07953230347238174,
+    "confidence": 0.68047
+  },
+  {
+    "timestamp": "2025-09-10T07:07:44.563841",
+    "symbol": "QBE.AX",
+    "sentiment_score": -0.03606937638480498,
+    "confidence": 0.5829700000000001
+  },
+  {
+    "timestamp": "2025-09-11T07:01:40.949863",
+    "symbol": "CBA.AX",
+    "sentiment_score": 0.21936910722869382,
+    "confidence": 0.7411300000000001
+  },
+  {
+    "timestamp": "2025-09-11T07:02:41.996107",
+    "symbol": "WBC.AX",
+    "sentiment_score": 0.20051253330007712,
+    "confidence": 0.7447800000000001
+  },
+  {
+    "timestamp": "2025-09-11T07:03:42.460318",
+    "symbol": "ANZ.AX",
+    "sentiment_score": 0.005222813062807563,
+    "confidence": 0.7488600000000001
+  },
+  {
+    "timestamp": "2025-09-11T07:04:45.702142",
+    "symbol": "NAB.AX",
+    "sentiment_score": 0.12623135284170967,
+    "confidence": 0.73467
+  },
+  {
+    "timestamp": "2025-09-11T07:05:44.544254",
+    "symbol": "MQG.AX",
+    "sentiment_score": 0.17338038324296268,
+    "confidence": 0.7489300000000001
+  },
+  {
+    "timestamp": "2025-09-11T07:06:44.491680",
+    "symbol": "SUN.AX",
+    "sentiment_score": 0.10384763727601584,
+    "confidence": 0.6882600000000001
+  },
+  {
+    "timestamp": "2025-09-11T07:07:46.787228",
+    "symbol": "QBE.AX",
+    "sentiment_score": -0.00553264976188413,
+    "confidence": 0.5810000000000001
   }
 ]

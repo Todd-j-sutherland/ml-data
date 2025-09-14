@@ -1,31 +1,31 @@
 {
-  "symbol": "SUN.AX",
+  "symbol": "QBE.AX",
   "analysis_period_days": 14,
-  "data_points": 158,
+  "data_points": 84,
   "correlations": {
     "sentiment_vs_price": {
-      "pearson": -0.10698419079886307,
-      "pearson_p_value": 0.18091738576624872,
-      "spearman": -0.05254269532453964,
-      "spearman_p_value": 0.5120426910631037,
+      "pearson": 0.061781251472119984,
+      "pearson_p_value": 0.5766505455526332,
+      "spearman": 0.31556771570093056,
+      "spearman_p_value": 0.0034557028513058988,
       "significance": "not_significant"
     },
     "sentiment_vs_volatility": {
-      "pearson": 0.08800244834881604,
-      "interpretation": "very_weak_positive"
+      "pearson": -0.32320436081758874,
+      "interpretation": "weak_negative"
     },
     "sentiment_vs_volume": {
-      "pearson": 0.0773962392445235,
-      "interpretation": "very_weak_positive"
+      "pearson": -0.5092813700496488,
+      "interpretation": "moderate_negative"
     },
     "lagged_correlations": {
-      "1_day": -0.09070915901674116,
-      "2_day": -0.09670317452097743,
-      "3_day": -0.10508507744039919
+      "1_day": 0.18201134265342642,
+      "2_day": 0.3017583864164639,
+      "3_day": 0.27088258702046697
     },
     "data_quality": {
-      "total_points": 158,
-      "valid_points": 158,
+      "total_points": 84,
+      "valid_points": 84,
       "data_completeness": 1.0
     }
   },
@@ -39,7 +39,7 @@
     }
   },
   "predictive_metrics": {
-    "prediction_accuracy": 0.2911392405063291,
+    "prediction_accuracy": 0.9761904761904762,
     "confusion_matrix": {
       "positive_sentiment": {
         "up": 0,
@@ -52,28 +52,28 @@
         "flat": 0
       },
       "neutral_sentiment": {
-        "up": 93,
-        "down": 19,
-        "flat": 46
+        "up": 2,
+        "down": 0,
+        "flat": 82
       }
     },
-    "total_predictions": 158,
-    "correct_predictions": 46,
+    "total_predictions": 84,
+    "correct_predictions": 82,
     "sentiment_distribution": {
       "positive": 0,
       "negative": 0,
-      "neutral": 158
+      "neutral": 84
     },
     "price_distribution": {
-      "up": 93,
-      "down": 19,
-      "flat": 46
+      "up": 2,
+      "down": 0,
+      "flat": 82
     }
   },
-  "summary": "Sentiment-price correlation: -0.107 (not_significant). Weak correlation suggests other factors dominate price movements. ",
+  "summary": "Sentiment-price correlation: 0.062 (not_significant). Weak correlation suggests other factors dominate price movements. ",
   "recommendations": [
     "No significant sentiment-price correlation. Focus on technical/fundamental analysis."
   ],
-  "analysis_timestamp": "2025-09-05T23:56:11.522428",
+  "analysis_timestamp": "2025-09-11T07:07:46.778148",
   "analysis_version": "1.0"
 }
