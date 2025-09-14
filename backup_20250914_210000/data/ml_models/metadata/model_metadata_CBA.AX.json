@@ -1,5 +1,5 @@
 {
-  "symbol": "WBC.AX",
+  "symbol": "CBA.AX",
   "feature_count": 42,
   "feature_names": [
     "sentiment_score",
@@ -52,11 +52,11 @@
     "training_samples": 657,
     "test_samples": 165,
     "feature_count": 42,
-    "timestamp": "2025-09-06T08:00:08.521609"
+    "timestamp": "2025-09-07T08:00:09.550658"
   },
-  "created_at": "2025-09-06T08:00:08.542077",
+  "created_at": "2025-09-07T08:00:09.560479",
   "model_files": {
-    "direction": "multioutput_direction_42_features_WBC.AX.pkl",
-    "magnitude": "multioutput_magnitude_42_features_WBC.AX.pkl"
+    "direction": "multioutput_direction_42_features_CBA.AX.pkl",
+    "magnitude": "multioutput_magnitude_42_features_CBA.AX.pkl"
   }
 }
