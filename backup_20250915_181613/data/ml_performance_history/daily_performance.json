@@ -1,0 +1,99 @@
+{
+  "2025-08-12": {
+    "timestamp": "2025-08-12T09:24:53.182450",
+    "date": "2025-08-12",
+    "report_version": "2.0",
+    "database_records": 193,
+    "model_status": {
+      "models_exist": true,
+      "direction_model_size_kb": 1541.6,
+      "magnitude_model_size_kb": 1294.2,
+      "model_version": "enhanced_v_20250811_130203",
+      "training_date": "20250811_130203",
+      "feature_count": 53
+    },
+    "todays_performance": {
+      "total_trades": 0,
+      "overall_win_rate": 0.0,
+      "overall_avg_return": 0.0,
+      "actions": {},
+      "error_predictions": 0
+    },
+    "weekly_performance": {
+      "actions": {
+        "HOLD": {
+          "trades": 60,
+          "avg_return": 0.078,
+          "win_rate": 53.333333333333336,
+          "confidence": 0.711
+        },
+        "SELL": {
+          "trades": 21,
+          "avg_return": -0.19,
+          "win_rate": 33.333333333333336,
+          "confidence": 0.788
+        },
+        "BUY": {
+          "trades": 2,
+          "avg_return": 2.483,
+          "win_rate": 100.0,
+          "confidence": 0.691
+        }
+      },
+      "daily_breakdown": {
+        "2025-08-11": {
+          "trades": 15,
+          "avg_return": 0.792,
+          "win_rate": 53.333333333333336
+        },
+        "2025-08-08": {
+          "trades": 7,
+          "avg_return": -1.952,
+          "win_rate": 0.0
+        },
+        "2025-08-07": {
+          "trades": 7,
+          "avg_return": -1.952,
+          "win_rate": 0.0
+        },
+        "2025-08-06": {
+          "trades": 40,
+          "avg_return": 0.127,
+          "win_rate": 47.5
+        },
+        "2025-08-05": {
+          "trades": 14,
+          "avg_return": 1.144,
+          "win_rate": 100.0
+        }
+      }
+    },
+    "data_quality": {
+      "bias_1h": 0.8,
+      "bias_4h": 48.8,
+      "bias_1d": 0.8,
+      "total_samples_7d": 123,
+      "new_samples_24h": 15,
+      "hours_since_last_data": 21.1,
+      "feature_completeness": 100.0,
+      "bias_warnings": [
+        "Extreme bias in 1h predictions",
+        "Extreme bias in 1d predictions"
+      ]
+    },
+    "health_summary": {
+      "health_score": 5,
+      "max_score": 6,
+      "status": "EXCELLENT",
+      "checks": {
+        "model_files": "present",
+        "database": "accessible",
+        "data_freshness": "recent",
+        "predictions": "working",
+        "performance": "49.4%",
+        "data_balance": "0.8%_biased"
+      },
+      "health_percentage": 83.0
+    }
+  }
+}
